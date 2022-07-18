@@ -1,0 +1,20 @@
+'use strict';
+
+let hour = ['6am', '7am', '8am'];
+
+let seattle = {
+  name: 'Seattle',
+  min: 23,
+  max: 65,
+  avg: 6.3,
+  getRandomCustomers: function () {
+    return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
+
+  },
+  calcCookiesPerHour: function () {
+    let customersThisHour = this.getRandomCustomers();
+    let cookiesSoldThisHour = Math.ceil(customersThisHour * this.avg);
+  }
+}
+console.log(seattle.getRandomCustomers());
+const people = [['pete', 32, 'librarian', null]]
