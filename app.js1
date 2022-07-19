@@ -1,5 +1,7 @@
 'use strict';
 
+console.log('Hello?');
+
 let hour = ['6am', '7am', '8am'];
 
 let seattle = {
@@ -17,4 +19,3 @@ let seattle = {
   }
 }
 console.log(seattle.getRandomCustomers());
-const people = [['pete', 32, 'librarian', null]]
