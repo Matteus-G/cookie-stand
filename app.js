@@ -1,6 +1,6 @@
-'use strict';
+//'use strict';
 
-console.log('hello world');
+//console.log('hello world');
 
 let jumper = {
   name: ' Jumper',
