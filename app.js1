@@ -1,0 +1,45 @@
+'use strict';
+
+let tableBody = document.querySelector('tbody');
+console.log(tableBody);
+
+console.log('Hello?');
+let seattleList = document.getElementById(''); 
+let hours = ['6am', '7am', '8am', '9am', '10am', '11am', '12pm', '1pm', '2pm', '3pm', '4pm', '5pm', '6pm', '7pm'];
+
+let seattle = {
+  name: 'Seattle',
+  min: 23,
+  max: 65,
+  avg: 6.3,
+  cookiesSoldEachHourArray: [],
+  dailyTotal: 0,
+  randomNumberCustomers: function () {
+    return Math.floor(Math.random() * (this.max - this.min + 1) + this.min);
+  },
+  calcCookieSales: function () {
+    for (let i = 0; i < hours.length; i++) {
+
+      let customersThisHour = this.randomNumberCustomers();
+      let cookieSalesThisHour = Math.ceil(customersThisHour * this.avg);
+      this.cookiesSoldEachHourArray.push(cookieSalesThisHour);
+     
+      console.log(this.cookiesSoldEachHourArray);
+      this.dailyTotal = this.dailyTotal + cookieSalesThisHour;
+    }
+  },
+  render: function () {
+    for (let i = 0; i < hours.length; i++) {
+      let listItem = document.createElement('li');
+      listItem.textContent = `$(hours[i]): ${this.cookiesSoldEachHourArray[i]}
+      cookies`;
+     // seattleList.appendChild(listItem);
+    }
+    let totalLi = document.createElement('li');
+    totalLi.textContent = `Total: ${this.dailyTotal}`;
+    //seattleList.appendChild(totalLi);
+
+  }
+}
+seattle.calcCookieSales();
+seattle.render();
