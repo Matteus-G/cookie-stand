@@ -1,9 +1,18 @@
-* {
-  box-sizing: border-box
-}
 
 header {
   background-color: cornsilk;
+  margin-bottom: auto;
+}
+header nav{
+  width: 960px;
+  margin: auto;
+}
+
+ul {
+  
+  display: flex;
+  justify-content: space-evenly;
+flex-wrap: flex;
 }
 
 body {
@@ -18,10 +27,15 @@ h1 {
   border-bottom: 5px double aliceblue;
 }
 main {
-  width: 75%;
-  margin: 2rem auto;
+  width: 960px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-
+main img{
+  margin-bottom: 30px;
+}
 article {
   border: 1px solid aquamarine;
   padding: 2rem;
@@ -52,7 +66,8 @@ p {
 }
 
 footer {
-  padding: .6rem;
+  background-color: rgb(255, 140, 0);
+height: 50px;
 }
 
 a {

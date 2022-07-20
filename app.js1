@@ -43,3 +43,13 @@ let seattle = {
 }
 seattle.calcCookieSales();
 seattle.render();
+
+function City(name, min, max, avg) {
+  this.name = name;
+  this.min = min;
+  this.max = max;
+  this.avg = avg;
+
+  this.cookies = [];
+  this.salesList = [];
+}
