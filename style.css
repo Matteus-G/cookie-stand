@@ -1,19 +1,19 @@
 
 header {
-  background-color: cornsilk;
-  margin-bottom: auto;
-}
-header nav{
-  width: 960px;
+  background-color: rgb(221, 180, 16);
   margin: auto;
 }
+header nav{
+width: 960px;
+  margin: 30px;
+}
 
-ul {
-  
+header ul {
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-evenly;
 flex-wrap: flex;
-}
+} 
 
 body {
   background-color: salmon;
@@ -88,4 +88,8 @@ thead th {
 }
 tfoot {
   background-color: rgba(6, 108, 98, 0.1);
+}
+
+article a {
+  text-decoration-line: none;
 }
