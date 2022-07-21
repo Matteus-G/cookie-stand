@@ -21,6 +21,14 @@ main img{
   margin-bottom: 30px;
 }
 
+article {
+  background-color: slategray;
+  width: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
 footer {
   background-color: rgb(255, 140, 0);
 height: 50px;
